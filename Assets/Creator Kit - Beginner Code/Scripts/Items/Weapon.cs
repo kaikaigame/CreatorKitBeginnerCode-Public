@@ -237,7 +237,7 @@ public class WeaponEditor : Editor
         var newWeapon = CreateInstance<Weapon>();
         newWeapon.Slot = (EquipmentItem.EquipmentSlot)666;
         
-        ProjectWindowUtil.CreateAsset(newWeapon, "weapon.asset");
+        ProjectWindowUtil.CreateAsset(newWeapon, "Weapon.asset");
     }
     
     void OnEnable()

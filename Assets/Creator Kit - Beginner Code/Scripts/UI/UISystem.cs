@@ -139,5 +139,10 @@ namespace CreatorKitCodeInternal
                 SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData(){ Clip = OpenInventoryClip});
             }
         }
+
+        public void ExitGame()
+        {
+            Application.Quit();
+        }
     }
 }

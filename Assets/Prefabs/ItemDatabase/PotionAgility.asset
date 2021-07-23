@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7487836716762463713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4078420f87dbb084b8104e68a9ae2939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  duration: 15
+  agilityChange: 5
+  effectSprite: {fileID: 0}
+--- !u!114 &-6669579438422830045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4078420f87dbb084b8104e68a9ae2939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: Add 5 Agility for 10 Seconds
+  duration: 10
+  agilityChange: 5
+  effectSprite: {fileID: 21300000, guid: 3c9b1bd688b22324c9bc5eb12cc12aea, type: 3}
+--- !u!114 &-5317978159639978345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a164706e4dc5a4b44b645cb6c64d9923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  HealthPurcentageAmount: 20
+--- !u!114 &-416277720271364118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930204d2e0465744a932e283ed38fdab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  HealthAmount: 0
+--- !u!114 &-126027817217850966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930204d2e0465744a932e283ed38fdab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  HealthAmount: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328cd29feea7c9e448f98552a0eebdd2, type: 3}
+  m_Name: PotionAgility
+  m_EditorClassIdentifier: 
+  ItemName: Potion Agility
+  ItemSprite: {fileID: 21300000, guid: 3c9b1bd688b22324c9bc5eb12cc12aea, type: 3}
+  Description: 
+  WorldObjectPrefab: {fileID: 5898196935238221940, guid: 1ade3b11d99c9e3438d7b0b0191f4592,
+    type: 3}
+  UsageEffects:
+  - {fileID: -6669579438422830045}
+--- !u!114 &2135871159851872481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930204d2e0465744a932e283ed38fdab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  HealthAmount: 0

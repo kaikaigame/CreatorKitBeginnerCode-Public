@@ -98,6 +98,12 @@ namespace CreatorKitCode
             var i = GetVFX(type);
             i.Effect.gameObject.transform.position = position;
 
+            //使用后特效消失
+            if (type == VFXType.FireEffect)
+            {
+                Destroy(i.Effect.gameObject, 1f);
+            }
+
             return i;
         }
     }

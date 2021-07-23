@@ -5,10 +5,11 @@ using System;
 public class SpawnerItem : MonoBehaviour
 {
     public GameObject ObjectToSpawn;
-    public Vector3 direction;
-    public Vector3 spawnPosition;
     public int radius = 5;
+    public int count;
 
+    Vector3 direction;
+    Vector3 spawnPosition;
     LootAngle myLootAngle = new LootAngle(45);
 
     void Start()
@@ -25,9 +26,10 @@ public class SpawnerItem : MonoBehaviour
         //SpawnPotion(90);
         //SpawnPotion(135);
 
-        SpawnPotion(myLootAngle.NextAngle());
-        SpawnPotion(myLootAngle.NextAngle());
-        SpawnPotion(myLootAngle.NextAngle());
+        for (int i = 0; i < count; i++)
+        {
+            SpawnPotion(myLootAngle.NextAngle());
+        }
     }
 
     //生成药水

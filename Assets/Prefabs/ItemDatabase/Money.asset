@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3020648376635912171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f043224c6a4bdc34b964eed072edba39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: Add 5 Defense for 10 Seconds
+  Duration: 10
+  DefenseChange: 5
+  EffectSprite: {fileID: 21300000, guid: 3dd3031e05abf9f41832ab53ea9680c0, type: 3}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328cd29feea7c9e448f98552a0eebdd2, type: 3}
+  m_Name: Money
+  m_EditorClassIdentifier: 
+  ItemName: Money
+  ItemSprite: {fileID: 21300000, guid: 92268a38b32744d4da581cc6d0b87aef, type: 3}
+  Description: Makes the West go round
+  WorldObjectPrefab: {fileID: 5425733448891748066, guid: 78a62d5ec617d564f8925757d757eabe,
+    type: 3}
+  UsageEffects:
+  - {fileID: -3020648376635912171}
+--- !u!114 &3454783934551048149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f043224c6a4bdc34b964eed072edba39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  Duration: 10
+  DefenseChange: 5
+  EffectSprite: {fileID: 0}

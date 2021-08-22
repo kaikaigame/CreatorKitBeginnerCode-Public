@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using CreatorKitCode;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -68,7 +69,9 @@ namespace CreatorKitCodeInternal
         {
             CharacterData data = PlayerCharacter.Data;
         
-            PlayerHealthSlider.value = PlayerCharacter.Data.Stats.CurrentHealth / (float) PlayerCharacter.Data.Stats.stats.health;
+            PlayerHealthSlider.value = PlayerCharacter.Data.Stats.CurrentHealth 
+                / (float) PlayerCharacter.Data.Stats.stats.health;
+
             MaxHealth.text = PlayerCharacter.Data.Stats.stats.health.ToString();
             CurrentHealth.text = PlayerCharacter.Data.Stats.CurrentHealth.ToString();
         
@@ -129,20 +132,28 @@ namespace CreatorKitCodeInternal
             {
                 ((Image)OpenInventoryButton.targetGraphic).sprite = m_ClosedInventorySprite;
                 InventoryWindow.gameObject.SetActive(false);
-                SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData(){ Clip = CloseInventoryClip});
+
+                SFXManager.PlaySound(SFXManager.Use.Sound2D, 
+                    new SFXManager.PlayData(){ Clip = CloseInventoryClip});
             }
             else
             {
                 ((Image)OpenInventoryButton.targetGraphic).sprite = m_OpenInventorySprite;
                 InventoryWindow.gameObject.SetActive(true);
                 InventoryWindow.Load(PlayerCharacter.Data);
-                SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData(){ Clip = OpenInventoryClip});
+
+                SFXManager.PlaySound(SFXManager.Use.Sound2D, 
+                    new SFXManager.PlayData(){ Clip = OpenInventoryClip});
             }
         }
 
         public void ExitGame()
         {
-            Application.Quit();
+#if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#else
+		Application.Quit();
+#endif
         }
     }
 }

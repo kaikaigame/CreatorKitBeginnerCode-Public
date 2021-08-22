@@ -12,8 +12,9 @@ https://assetstore.unity.com/packages/templates/tutorials/creator-kit-beginner-c
 My special thanks go to M-Studio  
 https://m-studio-m.github.io  
   
-Unity m_EditorVersion:  2021.1.15f1  
+Unity m_EditorVersion:  2021.1.17f1  
   
+KEYBOARD  
 ZOOM: mouse scrollwheel  
 CLICK: left mouse  
 ATTACK: left mouse  
